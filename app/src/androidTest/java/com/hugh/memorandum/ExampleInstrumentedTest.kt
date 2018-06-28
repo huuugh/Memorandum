@@ -2,6 +2,7 @@ package com.hugh.memorandum
 
 import android.support.test.InstrumentationRegistry
 import android.support.test.runner.AndroidJUnit4
+import com.hugh.memorandum.utils.TimeUtil
 
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -20,5 +21,12 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getTargetContext()
         assertEquals("com.hugh.memorandum", appContext.packageName)
+    }
+
+    @Test
+    fun checkTime() {
+        val timeUtil = TimeUtil()
+        val formatDate = timeUtil.formatDate()
+        assertEquals(formatDate, "2018/6/28")
     }
 }

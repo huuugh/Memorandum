@@ -21,16 +21,20 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:textSize="12sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018/4/1"
-            android:id="@+id/memorandum_time"/>
+            android:text="创建于：2018/4/1"
+            android:id="@+id/memorandum_create_time"/>
 
         <TextView
+            android:textSize="12sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="2018/4/1"
-            android:id="@+id/memorandum_time"/>
+            android:text="更新于：2018/4/1"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/memorandum_create_time"
+            android:id="@+id/memorandum_update_time"/>
 
     </RelativeLayout>
 
